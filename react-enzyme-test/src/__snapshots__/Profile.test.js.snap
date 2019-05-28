@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Profile /> matches snapshot 1`] = `
+<Profile
+  name="김민준"
+  username="velopert"
+>
+  <div>
+    <b>
+      velopert
+    </b>
+     
+    <span>
+      (
+      김민준
+      )
+    </span>
+  </div>
+</Profile>
+`;

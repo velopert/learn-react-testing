@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HookCounter /> matches snapshot 1`] = `
+<HookCounter>
+  <div>
+    <h2>
+      0
+    </h2>
+    <button
+      onClick={[Function]}
+    >
+      +1
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      -1
+    </button>
+  </div>
+</HookCounter>
+`;
