@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <title>벨로퍼트와 함께하는 리액트 테스팅</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description" />
     <meta
@@ -20,12 +20,24 @@
         loadSidebar: true,
         subMaxLevel: 3,
         auto2top: true,
-        plugins: [EditOnGithubPlugin.create(docBase, docEditBase, title)]
+        disqus: 'learn-react-test',
+        plugins: [
+          function(hook, vm) {
+            hook.beforeEach(function(html) {
+              var url =
+                'https://github.com/velopert/learn-react-testing/edit/master/docs/' +
+                vm.route.file;
+              var editHtml = '[📝 수정 요청하기](' + url + ')\n';
+
+              return editHtml + html;
+            });
+          }
+        ]
       };
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-jsx.min.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
-    <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/disqus.min.js"></script>
   </body>
 </html>
