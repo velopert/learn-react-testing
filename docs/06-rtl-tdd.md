@@ -408,7 +408,7 @@ export default TodoItem;
 
 이번에는 `todo` 객체가 지니고 있는 `done` 값이 `true` 라면 삭제선이 그어지고 `false` 라면 그어지지 않도록 구현을 해보겠습니다. 테스트 코드를 먼저 작성해보세요.
 
-#### `src/TodoForm.test.js`
+#### `src/TodoItem.test.js`
 
 ```jsx
 import React from 'react';
